@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="#FFFFFFFF"
+		>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="#FFFFFFFF">
+	
+	<TextView android:id="@+id/newreward" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="130px" 
+	android:textColor="#000000" 
+	android:text="Add Question" />
+	
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/main_table" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:paddingLeft="10px" 
+		android:layout_marginTop="20px"	
+		android:layout_marginBottom="20px" >
+		
+		<!--<TableRow>
+		
+	<TextView 
+	android:id="@+id/txt_lesson" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:textStyle="bold"
+	android:layout_marginLeft="10px" 
+	android:textColor="#000000" 
+	android:text="Lesson" />
+	
+	<Spinner
+	android:id="@+id/spr_lesson" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	
+	/>
+	</TableRow>
+		
+		--><TableRow>
+		
+	<TextView 
+	android:id="@+id/txt_parent_unit" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10px" 
+	android:textColor="#000000" 
+	android:text="Parent Unit" />
+	
+	<Spinner
+	android:id="@+id/spr_parent_unit" 
+	android:layout_marginLeft="20px"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	
+	/>
+	</TableRow>
+	
+	<TableRow>
+		
+	<TextView 
+	android:id="@+id/txt_difficulty" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10px" 
+	android:textColor="#000000" 
+	android:text="Difficulty" />
+	
+	<Spinner
+		android:layout_marginLeft="20px"
+	android:id="@+id/spr_difficulty" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	
+	/>
+	</TableRow>
+	
+	<TableRow>
+		
+	<TextView 
+	android:id="@+id/txt_qtext" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10px" 
+	android:textColor="#000000" 
+	android:text="Question Text" />
+	
+	<EditText
+		android:layout_marginLeft="20px"
+	android:id="@+id/edt_qtext" 
+	android:layout_width="150px"
+	android:layout_height="wrap_content"/>
+	</TableRow>
+	</TableLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/main_table1" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+			 >
+	
+	<TableRow>
+		
+	<TextView 
+	android:id="@+id/txt_choice" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10px" 
+	android:textColor="#000000" 
+	android:text="Insert options" />
+	
+	<Button
+		android:layout_marginLeft="20px"
+	android:id="@+id/btn_add" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Add Option"/>
+	</TableRow>
+	
+	<TableRow>
+	
+	<EditText
+	android:id="@+id/edt_choice1" 
+	android:layout_width="150px"
+	android:layout_height="wrap_content"
+	android:visibility="gone"/>
+	
+	<Button
+		android:layout_marginLeft="20px"
+	android:id="@+id/btn_remove1" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Remove"
+	android:visibility="gone"/>
+	
+	</TableRow>
+	<TableRow>
+	
+	<EditText
+	
+	android:id="@+id/edt_choice2" 
+	android:layout_width="150px"
+	android:layout_height="wrap_content"
+	android:visibility="gone"/>
+	
+	<Button
+		android:layout_marginLeft="20px"
+	android:id="@+id/btn_remove2" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Remove"
+	android:visibility="gone"/>
+	
+	</TableRow>
+	<TableRow>
+	
+	<EditText
+	android:id="@+id/edt_choice3" 
+	android:layout_width="150px"
+	android:layout_height="wrap_content"
+	android:visibility="gone"/>
+	
+	<Button
+		android:layout_marginLeft="20px"
+	android:id="@+id/btn_remove3" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Remove"
+	android:visibility="gone"/>
+	
+	</TableRow>
+	<TableRow>
+	
+	<EditText
+	android:id="@+id/edt_choice4" 
+	android:layout_width="150px"
+	android:layout_height="wrap_content"
+	android:visibility="gone"/>
+	
+	<Button
+		android:layout_marginLeft="20px"
+	android:id="@+id/btn_remove4" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Remove"
+	android:visibility="gone"/>
+	
+	</TableRow>
+	
+	<TableRow>
+	
+	<EditText
+	android:id="@+id/edt_choice5" 
+	android:layout_width="150px"
+	android:layout_height="wrap_content"
+	android:visibility="gone"/>
+	
+	<Button
+		android:layout_marginLeft="20px"
+	android:id="@+id/btn_remove5" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Remove"
+	android:visibility="gone"/>
+	
+	</TableRow>
+	
+	<TableRow>
+		
+	<TextView 
+	android:id="@+id/txt_answer" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10px" 
+	android:textColor="#000000" 
+	android:text="Correct Answer" />
+	
+	<Spinner
+		android:layout_marginLeft="20px"
+	android:id="@+id/spr_answer" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	
+	/>
+	</TableRow>
+	
+	<TableRow>
+		
+	<TextView 
+	android:id="@+id/txt_explanation" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10px" 
+	android:textColor="#000000" 
+	android:text="Explanation" />
+	
+	<EditText
+		android:layout_marginLeft="20px"
+	android:id="@+id/edt_explanation" 
+	android:layout_width="150px"
+	android:layout_height="wrap_content"/>
+	</TableRow>
+	
+	<TableRow>
+		
+	<TextView 
+	
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10px" 
+	android:textColor="#000000" 
+	android:text="" />
+	
+	<Button
+		android:layout_marginLeft="20px"
+	android:id="@+id/btn_save" 
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Save"/>
+	</TableRow>
+	
+</TableLayout>	
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+				

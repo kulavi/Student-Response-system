@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+        <item android:id="@+id/VSL"
+        android:title="View Student list"/>
+    <item android:id="@+id/test"
+        android:title="Test" />
+    <item android:id="@+id/question"
+        android:title="Question"/>
+</menu>
